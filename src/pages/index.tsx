@@ -1,9 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+/* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -14,110 +10,174 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main className="content px-20 pt-20 mb-20 w-full flex items-center justify-center">
+        <div className="max-w-[900px]">
+          <div className="flex">
+            <img src="/images/logo.png" alt="logo" width={69} />
+            <div className="flex flex-col w-full justify-center items-center">
+              <h1 className="text-xl font-bold">
+                Philippine Women&apos;s University
+              </h1>
+              <h2 className="text-lg font-semibold">Ethics Review Board</h2>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+          <div className="border-2 border-black p-3 mt-20">
+            <h1 className="text-base font-bold">
+              Guidelines in filling up this form:
+            </h1>
+            <ol className="ml-10">
+              <li>
+                <div className="flex">
+                  <span>1.</span>
+                  <p className="ml-5">
+                    This file is composed of five(5) forms compiled in one word
+                    file. The following forms composed all the documents needed
+                    for Research Ethics Review:
+                  </p>
+                </div>
+                <ul className="list-decimal ml-20 font-semibold">
+                  <li className="flex">
+                    <span>a.</span>
+                    <p className="ml-5">Review Checklist</p>
+                  </li>
+                  <li className="flex">
+                    <span>b.</span>
+                    <p className="ml-5">Registration and Application Form</p>
+                  </li>
+                  <li className="flex">
+                    <span>c.</span>
+                    <p className="ml-5">Initial Review and Resubmission Form</p>
+                  </li>
+                  <li className="flex">
+                    <span>d.</span>
+                    <p className="ml-5">Protocol Assessment Form</p>
+                  </li>
+                  <li className="flex">
+                    <span>e.</span>
+                    <p className="ml-5">Informed Consent Assessment Form</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div className="flex">
+                  <span>2.</span>
+                  <p className="ml-5">
+                    Please complete all necessary blanks/items, otherwise put
+                    N/A.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="flex">
+                  <span>3.</span>
+                  <p className="ml-5">
+                    In the Protocol Assessment Form and Informed Consent
+                    Assessment Form,please make sure that the correct page
+                    numbers and paragraphs that correspond to your manuscript
+                    are indicated in the{" "}
+                    <span className="italic font-medium">
+                      “Page and paragraph where it can be found”
+                    </span>
+                    columns. Make sure that the page numbers in the form are
+                    correct when checked against the manuscript
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="flex">
+                  <span>4.</span>
+                  <p className="ml-5">
+                    Put a highlight on the corresponding page and paragraph
+                    located in the manuscript.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div className="flex">
+                  <span>5.</span>
+                  <p className="ml-5">
+                    Make sure that your signature is inserted in the form.
+                  </p>
+                </div>
+              </li>
+            </ol>
           </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+          <h1 className="uppercase text-lg font-bold w-full text-center py-10">
+            Review Checklist
+          </h1>
+          <h1 className="uppercase text-md font-bold w-full pb-10">
+            STUDY PROTOCOL INFORMATION
+          </h1>
+          <table className="border-2 border-black w-full">
+            <tbody>
+              <tr className="border-2 border-black">
+                <td className="text-center pb-5">PWUERB Code:1</td>
+                <td className="border-2 border-black w-[500px]"></td>
+              </tr>
+              <tr className="border-2 border-black">
+                <td className="pl-3 pb-10 pt-5">Study Protocol Title:</td>
+                <td className="border-2 border-black"></td>
+              </tr>
+              <tr className="border-2 border-black">
+                <td className="pl-3 pb-5">Principal Investigator:</td>
+                <td className="border-2 border-black"></td>
+              </tr>
+              <tr className="border-2 border-black">
+                <td className="pl-3 pb-5">Study Protocol Submission Date:</td>
+                <td className="border-2 border-black"></td>
+              </tr>
+              <tr className="border-2 border-black">
+                <td className="pl-3 pb-5">Verified Complete by:</td>
+                <td className="border-2 border-black pl-3 pb-5">
+                  ERB SECRETARIAT
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div className="px-20 pt-10">
+            <div className="flex font-medium">
+              <span>A.</span>
+              <span className="ml-3">Basic Documents (must submit)</span>
+            </div>
+            <div className="flex font-medium">
+              <input type="checkbox" />
+              <span className="ml-3">Review Checklist</span>
+            </div>
+            <div className="flex font-medium">
+              <input type="checkbox" />
+              <span className="ml-3">Registration and Application Form</span>
+            </div>
+            <div className="flex font-medium">
+              <input type="checkbox" />
+              <span className="ml-3">Protocol Assessment Form</span>
+            </div>
+            <div className="flex font-medium">
+              <input type="checkbox" />
+              <span className="ml-3">Study Protocol</span>
+            </div>
+            <div className="flex font-medium">
+              <input type="checkbox" />
+              <span className="ml-3">
+                Data collection forms (including CRFs)
+              </span>
+            </div>
+          </div>
+          <div className="w-full flex flex-col justify-center items-center gap-3 text-sm mt-10">
+            <p>
+              Office of Research and Development, Mezzanine Floor, J. Nakpil
+              Wing,
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+            <p>Philippine Women’s University, 1743 Taft Avenue, Manila</p>
+            <p>
+              Email:{" "}
+              <a href="mailto:ethics@pwu.edu.ph" className="text-[#0000EE]">
+                ethics@pwu.edu.ph
+              </a>
             </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+            <p>Tel: 8526 8421 loc 139</p>
+          </div>
         </div>
       </main>
     </>
-  )
+  );
 }
